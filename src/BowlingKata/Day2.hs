@@ -1,5 +1,7 @@
 module BowlingKata.Day2 where
 
+import Assert
+
 score :: [Int] -> Int
 score ([]) = 0
 score (x:[]) = x
@@ -8,11 +10,6 @@ score (x:y:z:[]) = x + y + z
 score (x:y:z:xs)    | x == 10 = 10 + y + z + score (y:z:xs)
                     | (x + y) == 10 = 10 + z + score (z:xs)
                     | otherwise = x + y + score (z:xs)
-
-assert name actual expected = do
-    if actual == expected
-        then print $ name ++ " PASSED"
-        else print $ name ++ " FAILED expected <" ++ show expected ++ "> but was <" ++ show actual ++ ">"
 
 gutterGame = do
     assert "gutter game" (score . replicate 20 $ 0) 0

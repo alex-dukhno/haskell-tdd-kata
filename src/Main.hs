@@ -4,18 +4,13 @@ import BowlingKata.Day1
 import BowlingKata.Day2
 import BowlingKata.Day3
 
-bowlingDay1 = do
-    let gutterGame = BowlingKata.Day1.score . replicate 20 $ 0
-    let allOnes = BowlingKata.Day1.score . replicate 20 $ 1
-    let oneSpare = BowlingKata.Day1.score $ [5,5] ++ 3: (replicate 17 0)
-    let oneStrike = BowlingKata.Day1.score $ 10:3:4: (replicate 16 0)
-    let perfectGame = BowlingKata.Day1.score . replicate 12 $ 10
-    print [gutterGame, allOnes, oneSpare, oneStrike, perfectGame]
-
-
 main = do
     print "Bowling kata first day"
-    bowlingDay1
+    BowlingKata.Day1.gutterGame
+    BowlingKata.Day1.allOnes
+    BowlingKata.Day1.oneSpare
+    BowlingKata.Day1.oneStrike
+    BowlingKata.Day1.perfectGame
     print ""
     print "Bowling kata second day"
     BowlingKata.Day2.gutterGame
