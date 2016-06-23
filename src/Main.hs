@@ -2,6 +2,7 @@ module Main where
 
 import BowlingKata.Day1
 import BowlingKata.Day2
+import BowlingKata.Day3
 
 bowlingDay1 = do
     let gutterGame = BowlingKata.Day1.score . replicate 20 $ 0
@@ -22,4 +23,11 @@ main = do
     BowlingKata.Day2.oneSpare
     BowlingKata.Day2.oneStrike
     BowlingKata.Day2.perfectGame
+    print ""
+    print "Bowling kata third day"
+    BowlingKata.Day3.gutterGame
+    BowlingKata.Day3.allOnes
+    BowlingKata.Day3.oneSpare
+    BowlingKata.Day3.oneStrike
+    BowlingKata.Day3.perfectGame
     print ""
