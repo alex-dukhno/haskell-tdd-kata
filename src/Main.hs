@@ -3,6 +3,7 @@ module Main where
 import BowlingKata.Day1
 import BowlingKata.Day2
 import BowlingKata.Day3
+import BowlingKata.Day4
 
 main = do
     print "Bowling kata first day"
@@ -25,4 +26,11 @@ main = do
     BowlingKata.Day3.oneSpare
     BowlingKata.Day3.oneStrike
     BowlingKata.Day3.perfectGame
+    print ""
+    print "Bowling kata fourth day"
+    BowlingKata.Day4.gutterGame
+    BowlingKata.Day4.allOnes
+    BowlingKata.Day4.oneSpare
+    BowlingKata.Day4.oneStrike
+    BowlingKata.Day4.perfectGame
     print ""
