@@ -5,6 +5,7 @@ import BowlingKata.Day2
 import BowlingKata.Day3
 import BowlingKata.Day4
 import BowlingKata.Day5
+import BowlingKata.Day6
 
 main = do
     print "Bowling kata first day"
@@ -41,4 +42,11 @@ main = do
     BowlingKata.Day5.oneSpare
     BowlingKata.Day5.oneStrike
     BowlingKata.Day5.perfectGame
+    print ""
+    print "Bowling kata sixth day"
+    BowlingKata.Day6.gutterGame
+    BowlingKata.Day6.allOnes
+    BowlingKata.Day6.oneSpare
+    BowlingKata.Day6.oneStrike
+    BowlingKata.Day6.perfectGame
     print ""
