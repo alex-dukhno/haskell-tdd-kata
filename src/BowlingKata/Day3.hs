@@ -1,6 +1,6 @@
-module BowlingKata.Day3 where
+module BowlingKata.Day3 (tests) where
 
-import Assert
+import Test.HUnit
 
 score :: [Int] -> Int
 score ([]) = 0
@@ -11,18 +11,20 @@ score (x:y:z:rolls) | x == 10 = 10 + y + z + score (y:z:rolls)
                     | (x + y) == 10 = 10 + z + score (z:rolls)
                     | otherwise = x + y + score (z:rolls)
 
+tests = TestList [TestLabel "GutterGame" gutterGame, TestLabel "AllOnes" allOnes, TestLabel "OneSpare" oneSpare, TestLabel "OneStrike" oneStrike, TestLabel "PerfectGame" perfectGame]
+
 gutterGame = do
-    assert "gutter game" (score . replicate 20 $ 0) 0
+    TestCase (assertEqual "gutter game" (score . replicate 20 $ 0) 0)
 
 
 allOnes = do
-    assert "all ones" (score . replicate 20 $ 1) 20
+    TestCase (assertEqual "all ones" (score . replicate 20 $ 1) 20)
 
 oneSpare = do
-    assert "one spare" (score $ 5:5:3:(replicate 17 $ 0)) 16
+    TestCase(assertEqual "one spare" (score $ 5:5:3:(replicate 17 $ 0)) 16)
 
 oneStrike = do
-    assert "one strike" (score $ 10:4:3:(replicate 16 $ 0)) 24
+    TestCase(assertEqual "one strike" (score $ 10:4:3:(replicate 16 $ 0)) 24)
 
 perfectGame = do
-    assert "perfect game" (score . replicate 12 $ 10) 300
+    TestCase(assertEqual "perfect game" (score . replicate 12 $ 10) 300)
