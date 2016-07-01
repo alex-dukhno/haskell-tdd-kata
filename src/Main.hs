@@ -12,6 +12,7 @@ import BowlingKata.Day7
 import BowlingKata.Day8
 import BowlingKata.Day9
 import BowlingKata.Day10
+import BowlingKata.Day11
 
 main = do
     runTestTT BowlingKata.Day1.tests
@@ -24,3 +25,4 @@ main = do
     runTestTT BowlingKata.Day8.tests
     runTestTT BowlingKata.Day9.tests
     runTestTT BowlingKata.Day10.tests
+    runTestTT BowlingKata.Day11.tests
