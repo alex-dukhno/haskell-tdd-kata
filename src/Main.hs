@@ -19,6 +19,7 @@ import CalculatorKata.Day2
 import CalculatorKata.Day3
 import CalculatorKata.Day4
 import CalculatorKata.Day5
+import CalculatorKata.Day6
 
 main = do
     runTestTT BowlingKata.Day1.tests
@@ -38,3 +39,4 @@ main = do
     runTestTT CalculatorKata.Day3.tests
     runTestTT CalculatorKata.Day4.tests
     runTestTT CalculatorKata.Day5.tests
+    runTestTT CalculatorKata.Day6.tests
