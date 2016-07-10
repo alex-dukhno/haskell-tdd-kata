@@ -20,7 +20,14 @@ module CalculatorKata.Day1 ( tests ) where
             else
                 argOne
 
-    tests = TestList [TestLabel "one digit" oneDigit, TestLabel "many digit" manyDigit, TestLabel "addition" addition, TestLabel "subtraction" subtraction, TestLabel "multiplication" multiplication, TestLabel "division" division]
+    tests = TestList
+        [ TestLabel "one digit" oneDigit
+        , TestLabel "many digit" manyDigit
+        , TestLabel "addition" addition
+        , TestLabel "subtraction" subtraction
+        , TestLabel "multiplication" multiplication
+        , TestLabel "division" division
+        ]
 
     oneDigit = TestCase (assertEqual "one digit" 2.0 (calculate "2"))
     manyDigit = TestCase (assertEqual "many digit" 234.0 (calculate "234"))

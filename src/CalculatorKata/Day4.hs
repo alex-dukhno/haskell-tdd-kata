@@ -12,7 +12,14 @@ module CalculatorKata.Day4 (tests) where
                                     | c == '/' = read num / calculate' src []
                                     | otherwise = calculate' src (num ++ [c])
 
-    tests = TestList [TestLabel "one digit" oneDigit, TestLabel "many digits" manyDigits, TestLabel "addition" addition, TestLabel "subtraction" subtraction, TestLabel "multiplication" multiplication, TestLabel "division" division]
+    tests = TestList
+        [ TestLabel "one digit" oneDigit
+        , TestLabel "many digits" manyDigits
+        , TestLabel "addition" addition
+        , TestLabel "subtraction" subtraction
+        , TestLabel "multiplication" multiplication
+        , TestLabel "division" division
+        ]
 
     oneDigit = TestCase (assertEqual "one digit" 4.0 (calculate "4"))
     manyDigits = TestCase (assertEqual "many digits" 345.0 (calculate "345"))

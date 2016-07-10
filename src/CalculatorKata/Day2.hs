@@ -29,7 +29,15 @@ module CalculatorKata.Day2 (tests) where
     parseArg (c:chars) arg  | c `elem` "+-*/" = read arg
                             | otherwise = parseArg chars (arg ++ [c])
 
-    tests = TestList [TestLabel "one digit" oneDigit, TestLabel "many digits" manyDigits, TestLabel "addition" addition, TestLabel "subtraction" subtraction, TestLabel "multiplication" multiplication, TestLabel "division" division, TestLabel "multiple operation" multipleOperation]
+    tests = TestList
+        [ TestLabel "one digit" oneDigit
+        , TestLabel "many digits" manyDigits
+        , TestLabel "addition" addition
+        , TestLabel "subtraction" subtraction
+        , TestLabel "multiplication" multiplication
+        , TestLabel "division" division
+        , TestLabel "multiple operation" multipleOperation
+        ]
 
     oneDigit = TestCase (assertEqual "one digit" 3.0 (calculate "3"))
     manyDigits = TestCase (assertEqual "many digits" 436.0 (calculate "436"))

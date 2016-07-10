@@ -34,7 +34,14 @@ module CalculatorKata.Day5 (tests) where
             parseArg ""     = (0.0, "")
             parseArg str    = let (digits, rest) = span isDigit str in (read digits, rest)
 
-    tests = TestList [TestLabel "one digit" oneDigit, TestLabel "many digits" manyDigits, TestLabel "addition" addition, TestLabel "subtraction" subtraction, TestLabel "multiplication" multiplication, TestLabel "division" division, TestLabel "many operations" manyOperations]
+    tests = TestList
+            [ TestLabel "one digit" oneDigit
+            , TestLabel "many digits" manyDigits
+            , TestLabel "addition" addition
+            , TestLabel "subtraction" subtraction
+            , TestLabel "multiplication" multiplication
+            , TestLabel "division" division
+            , TestLabel "many operations" manyOperations]
 
     oneDigit = TestCase (assertEqual "one digit" 7.0 (calculate "7"))
     manyDigits = TestCase (assertEqual "many digits" 547.0 (calculate "547"))
