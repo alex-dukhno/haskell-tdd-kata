@@ -11,7 +11,13 @@ module BowlingKata.Day6 (tests) where
                         | (x + y) == 10 = 10 + z + score (z:xs)
                         | otherwise = x + y + score (z:xs)
 
-    tests = TestList [TestLabel "GutterGame" gutterGame, TestLabel "AllOnes" allOnes, TestLabel "OneSpare" oneSpare, TestLabel "OneStrike" oneStrike, TestLabel "PerfectGame" perfectGame]
+    tests = TestList
+        [ TestLabel "GutterGame" gutterGame
+        , TestLabel "AllOnes" allOnes
+        , TestLabel "OneSpare" oneSpare
+        , TestLabel "OneStrike" oneStrike
+        , TestLabel "PerfectGame" perfectGame
+        ]
 
     gutterGame = TestCase (assertEqual "gutter game" (score . replicate 20 $ 0) 0)
     allOnes = TestCase (assertEqual "all ones" (score . replicate 20 $ 1) 20)

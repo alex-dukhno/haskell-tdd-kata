@@ -20,7 +20,13 @@ module BowlingKata.Day5 (tests) where
     isSpare :: Int -> Int -> Bool
     isSpare roll1 roll2 = roll1 + roll2 == 10
 
-    tests = TestList [TestLabel "GutterGame" gutterGame, TestLabel "AllOnes" allOnes, TestLabel "OneSpare" oneSpare, TestLabel "OneStrike" oneStrike, TestLabel "PerfectGame" perfectGame]
+    tests = TestList
+        [ TestLabel "GutterGame" gutterGame
+        , TestLabel "AllOnes" allOnes
+        , TestLabel "OneSpare" oneSpare
+        , TestLabel "OneStrike" oneStrike
+        , TestLabel "PerfectGame" perfectGame
+        ]
 
     gutterGame = TestCase (assertEqual "gutter game" (score . replicate 20 $ 0) 0)
     allOnes = TestCase (assertEqual "all ones" (score . replicate 20 $ 1) 20)

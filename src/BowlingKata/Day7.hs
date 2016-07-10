@@ -17,7 +17,13 @@ module BowlingKata.Day7 ( tests ) where
     isStrike :: Int -> Bool
     isStrike roll = roll == 10
 
-    tests = TestList[TestLabel "Gutter Game" gutterGame, TestLabel "All Ones" allOnes, TestLabel "One Spare" oneSpare, TestLabel "One Strike" oneStrike, TestLabel "Perfect Game" perfectGame]
+    tests = TestList
+        [ TestLabel "Gutter Game" gutterGame
+        , TestLabel "All Ones" allOnes
+        , TestLabel "One Spare" oneSpare
+        , TestLabel "One Strike" oneStrike
+        , TestLabel "Perfect Game" perfectGame
+        ]
 
     gutterGame = TestCase (assertEqual "gutter game" 0 (score . rollMany 20 $ 0))
     allOnes = TestCase (assertEqual "all ones" 20 (score . rollMany 20 $ 1))

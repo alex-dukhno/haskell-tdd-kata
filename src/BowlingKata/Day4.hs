@@ -11,7 +11,13 @@ score (roll1:roll2:roll3:rolls) | roll1 == 10 = 10 + roll2 + roll3 + score (roll
                                 | roll1 + roll2 == 10 = 10 + roll3 + score (roll3:rolls)
                                 | otherwise = roll1 + roll2 + score (roll3:rolls)
 
-tests = TestList [TestLabel "GutterGame" gutterGame, TestLabel "AllOnes" allOnes, TestLabel "OneSpare" oneSpare, TestLabel "OneStrike" oneStrike, TestLabel "PerfectGame" perfectGame]
+tests = TestList
+    [ TestLabel "GutterGame" gutterGame
+    , TestLabel "AllOnes" allOnes
+    , TestLabel "OneSpare" oneSpare
+    , TestLabel "OneStrike" oneStrike
+    , TestLabel "PerfectGame" perfectGame
+    ]
 
 gutterGame = do
     TestCase (assertEqual "gutter game" (score . replicate 20 $ 0) 0)

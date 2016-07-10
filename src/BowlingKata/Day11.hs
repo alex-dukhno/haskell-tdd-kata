@@ -15,7 +15,13 @@ module BowlingKata.Day11 ( tests ) where
             framePoints = roll1 + roll2
             isSpare = framePoints == 10
 
-    tests = TestList [TestLabel "gutter game" gutterGame, TestLabel "all ones" allOnes, TestLabel "one spare" oneSpare, TestLabel "one strike" oneStrike, TestLabel "perfect game" perfectGame]
+    tests = TestList
+        [ TestLabel "gutter game" gutterGame
+        , TestLabel "all ones" allOnes
+        , TestLabel "one spare" oneSpare
+        , TestLabel "one strike" oneStrike
+        , TestLabel "perfect game" perfectGame
+        ]
 
     gutterGame = TestCase (assertEqual "gutter game" 0 (score . rollMany 20 $ 0))
     allOnes = TestCase (assertEqual "all ones" 20 (score . rollMany 20 $ 1))

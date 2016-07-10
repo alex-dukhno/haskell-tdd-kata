@@ -11,7 +11,13 @@ module BowlingKata.Day8 ( tests ) where
                                     | isSpare roll1 roll2 = 10 + roll3 + score (roll3:rolls)
                                     | otherwise = roll1 + roll2 + score (roll3:rolls)
 
-    tests = TestList[TestLabel "gutter game" gutterGame, TestLabel "all ones" allOnes, TestLabel "one spare" oneSpare, TestLabel "one strike" oneStrike, TestLabel "perfect game" perfectGame]
+    tests = TestList
+        [ TestLabel "gutter game" gutterGame
+        , TestLabel "all ones" allOnes
+        , TestLabel "one spare" oneSpare
+        , TestLabel "one strike" oneStrike
+        , TestLabel "perfect game" perfectGame
+        ]
 
     gutterGame = TestCase( assertEqual "gutter game" 0 (score . rollMany 20 $ 0))
     allOnes = TestCase( assertEqual "all ones" 20 (score . rollMany 20 $ 1))

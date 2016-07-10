@@ -11,7 +11,13 @@ score (x:y:z:rolls) | x == 10 = 10 + y + z + score (y:z:rolls)
                     | (x + y) == 10 = 10 + z + score (z:rolls)
                     | otherwise = x + y + score (z:rolls)
 
-tests = TestList [TestLabel "GutterGame" gutterGame, TestLabel "AllOnes" allOnes, TestLabel "OneSpare" oneSpare, TestLabel "OneStrike" oneStrike, TestLabel "PerfectGame" perfectGame]
+tests = TestList
+    [ TestLabel "GutterGame" gutterGame
+    , TestLabel "AllOnes" allOnes
+    , TestLabel "OneSpare" oneSpare
+    , TestLabel "OneStrike" oneStrike
+    , TestLabel "PerfectGame" perfectGame
+    ]
 
 gutterGame = do
     TestCase (assertEqual "gutter game" (score . replicate 20 $ 0) 0)
