@@ -1,6 +1,7 @@
 module Main where
 
 import Test.HUnit
+import Test.Hspec
 
 import BowlingKata.Day1
 import BowlingKata.Day2
@@ -24,6 +25,7 @@ import CalculatorKata.Day7
 import CalculatorKata.Day8
 import CalculatorKata.Day9
 import CalculatorKata.Day10
+import RomanNumbersKata.Day1
 
 main = do
     runTestTT BowlingKata.Day1.tests
@@ -48,3 +50,5 @@ main = do
     runTestTT CalculatorKata.Day8.tests
     runTestTT CalculatorKata.Day9.tests
     runTestTT CalculatorKata.Day10.tests
+
+    hspec RomanNumbersKata.Day1.tests
