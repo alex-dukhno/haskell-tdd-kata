@@ -1,6 +1,6 @@
 module CalculatorKata.Day1 ( tests ) where
 
-    import Test.HUnit
+    import Test.Hspec
     import Data.List (splitAt)
     import Debug.Trace (trace)
 
@@ -20,18 +20,21 @@ module CalculatorKata.Day1 ( tests ) where
             else
                 argOne
 
-    tests = TestList
-        [ TestLabel "one digit" oneDigit
-        , TestLabel "many digit" manyDigit
-        , TestLabel "addition" addition
-        , TestLabel "subtraction" subtraction
-        , TestLabel "multiplication" multiplication
-        , TestLabel "division" division
-        ]
+    tests = do
+        it "calculates one digit"
+            (calculate "2" == 2.0)
 
-    oneDigit = TestCase (assertEqual "one digit" 2.0 (calculate "2"))
-    manyDigit = TestCase (assertEqual "many digit" 234.0 (calculate "234"))
-    addition = TestCase (assertEqual "addition" (54.0+6.0) (calculate "54+6"))
-    subtraction = TestCase (assertEqual "subtraction" (54.0-8.0) (calculate "54-8"))
-    multiplication = TestCase (assertEqual "multiplication" (54.0*2) (calculate "54*2"))
-    division = TestCase (assertEqual "division" (54.0/6.0) (calculate "54/6"))
+        it "calculates many digits"
+            (calculate "234" == 234.0)
+
+        it "calculates addition"
+            (calculate "54+6" == 54.0+6.0)
+
+        it "calculates subtraction"
+            (calculate "54-8" == 54.0-8.0)
+
+        it "calculates multiplication"
+            (calculate "54*2" == 54.0*2)
+
+        it "calculates division"
+            (calculate "54/6" == 54.0/6.0)

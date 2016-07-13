@@ -1,6 +1,6 @@
 module CalculatorKata.Day4 (tests) where
 
-    import Test.HUnit
+    import Test.Hspec
 
     calculate :: String -> Double
     calculate src = calculate' src []
@@ -12,18 +12,21 @@ module CalculatorKata.Day4 (tests) where
                                     | c == '/' = read num / calculate' src []
                                     | otherwise = calculate' src (num ++ [c])
 
-    tests = TestList
-        [ TestLabel "one digit" oneDigit
-        , TestLabel "many digits" manyDigits
-        , TestLabel "addition" addition
-        , TestLabel "subtraction" subtraction
-        , TestLabel "multiplication" multiplication
-        , TestLabel "division" division
-        ]
+    tests = do
+        it "calculates one digit"
+            (calculate "4" == 4.0)
 
-    oneDigit = TestCase (assertEqual "one digit" 4.0 (calculate "4"))
-    manyDigits = TestCase (assertEqual "many digits" 345.0 (calculate "345"))
-    addition = TestCase (assertEqual "addition" (56.0+78.0) (calculate "56+78"))
-    subtraction = TestCase (assertEqual "subtraction" (768.0-45.0) (calculate "768-45"))
-    multiplication = TestCase (assertEqual "multiplication" (65.0*2.0) (calculate "65*2"))
-    division = TestCase (assertEqual "division" (66.0/3.0) (calculate "66/3"))
+        it "calculates many digits"
+            (calculate "345" == 345.0)
+
+        it "calculates addition"
+            (calculate "56+78" == 56.0+78.0)
+
+        it "calculates subtraction"
+            (calculate "768-45" == 768.0-45.0)
+
+        it "calculates multiplication"
+            (calculate "65*2" == 65.0*2.0)
+
+        it "calculates division"
+            (calculate "66/3" == 66.0/3.0)
