@@ -25,7 +25,9 @@ module Main where
     import CalculatorKata.Day8
     import CalculatorKata.Day9
     import CalculatorKata.Day10
+
     import RomanNumbersKata.Day1
+    import RomanNumbersKata.Day2
 
     main = do
         runTestTT BowlingKata.Day1.tests
@@ -52,3 +54,4 @@ module Main where
         hspec CalculatorKata.Day10.tests
 
         hspec RomanNumbersKata.Day1.tests
+        hspec RomanNumbersKata.Day2.tests
