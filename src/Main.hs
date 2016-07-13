@@ -1,6 +1,5 @@
 module Main where
 
-    import Test.HUnit
     import Test.Hspec
 
     import BowlingKata.Day1
@@ -30,17 +29,17 @@ module Main where
     import RomanNumbersKata.Day2
 
     main = do
-        runTestTT BowlingKata.Day1.tests
-        runTestTT BowlingKata.Day2.tests
-        runTestTT BowlingKata.Day3.tests
-        runTestTT BowlingKata.Day4.tests
-        runTestTT BowlingKata.Day5.tests
-        runTestTT BowlingKata.Day6.tests
-        runTestTT BowlingKata.Day7.tests
-        runTestTT BowlingKata.Day8.tests
-        runTestTT BowlingKata.Day9.tests
-        runTestTT BowlingKata.Day10.tests
-        runTestTT BowlingKata.Day11.tests
+        hspec BowlingKata.Day1.tests
+        hspec BowlingKata.Day2.tests
+        hspec BowlingKata.Day3.tests
+        hspec BowlingKata.Day4.tests
+        hspec BowlingKata.Day5.tests
+        hspec BowlingKata.Day6.tests
+        hspec BowlingKata.Day7.tests
+        hspec BowlingKata.Day8.tests
+        hspec BowlingKata.Day9.tests
+        hspec BowlingKata.Day10.tests
+        hspec BowlingKata.Day11.tests
 
         hspec CalculatorKata.Day1.tests
         hspec CalculatorKata.Day2.tests
