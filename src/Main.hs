@@ -33,7 +33,8 @@ module Main where
     import RomanNumbersKata.Day6
     import RomanNumbersKata.Day7
     import RomanNumbersKata.Day8
-    -- import RomanNumbersKata.Day9
+    import RomanNumbersKata.Day9
+    import RomanNumbersKata.Day10
 
     main = do
         hspec BowlingKata.Day1.tests
@@ -67,4 +68,5 @@ module Main where
         hspec RomanNumbersKata.Day6.tests
         hspec RomanNumbersKata.Day7.tests
         hspec RomanNumbersKata.Day8.tests
-        -- hspec RomanNumbersKata.Day9.tests
+        hspec RomanNumbersKata.Day9.tests
+        hspec RomanNumbersKata.Day10.tests
