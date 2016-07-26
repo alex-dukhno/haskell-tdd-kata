@@ -40,6 +40,7 @@ module Main where
     import FizzBuzzKata.Day2
     import FizzBuzzKata.Day3
     import FizzBuzzKata.Day4
+    import FizzBuzzKata.Day5
 
     main = do
         hspec BowlingKata.Day1.tests
@@ -80,3 +81,4 @@ module Main where
         hspec FizzBuzzKata.Day2.tests
         hspec FizzBuzzKata.Day3.tests
         hspec FizzBuzzKata.Day4.tests
+        hspec FizzBuzzKata.Day5.tests
