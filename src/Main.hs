@@ -54,6 +54,7 @@ module Main where
     import FruitShopKata.Day5
     import FruitShopKata.Day6
     import FruitShopKata.Day7
+    import FruitShopKata.Day8
 
     main = do
         hspec BowlingKata.Day1.tests
@@ -108,3 +109,4 @@ module Main where
         hspec FruitShopKata.Day5.tests
         hspec FruitShopKata.Day6.tests
         hspec FruitShopKata.Day7.tests
+        hspec FruitShopKata.Day8.tests
