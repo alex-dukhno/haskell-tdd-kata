@@ -63,6 +63,7 @@ module Main where
     import LeapYearKata.Day3
     import LeapYearKata.Day4
     import LeapYearKata.Day5
+    import LeapYearKata.Day6
 
     main = do
         hspec BowlingKata.Day1.tests
@@ -126,3 +127,4 @@ module Main where
         hspec LeapYearKata.Day3.tests
         hspec LeapYearKata.Day4.tests
         hspec LeapYearKata.Day5.tests
+        hspec LeapYearKata.Day6.tests
