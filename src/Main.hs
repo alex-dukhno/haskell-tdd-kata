@@ -69,6 +69,8 @@ module Main where
     import LeapYearKata.Day9
     import LeapYearKata.Day10
 
+    import SubListKata.Day1
+
     main = do
         hspec BowlingKata.Day1.tests
         hspec BowlingKata.Day2.tests
@@ -136,3 +138,5 @@ module Main where
         hspec LeapYearKata.Day8.tests
         hspec LeapYearKata.Day9.tests
         hspec LeapYearKata.Day10.tests
+
+        hspec SubListKata.Day1.tests
