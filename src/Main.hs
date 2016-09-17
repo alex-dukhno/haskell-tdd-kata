@@ -83,6 +83,7 @@ module Main where
     import TriangleKata.Day4
     import TriangleKata.Day5
     import TriangleKata.Day6
+    import TriangleKata.Day7
 
     main = do
         hspec BowlingKata.Day1.tests
@@ -166,3 +167,4 @@ module Main where
         hspec TriangleKata.Day4.tests
         hspec TriangleKata.Day5.tests
         hspec TriangleKata.Day6.tests
+        hspec TriangleKata.Day7.tests
