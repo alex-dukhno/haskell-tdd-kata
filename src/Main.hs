@@ -194,7 +194,6 @@ module Main where
         hspec ScrabbleScoreKata.Day4.tests
         hspec ScrabbleScoreKata.Day5.tests
         hspec ScrabbleScoreKata.Day6.tests
-
         hspec ScrabbleScoreKata.Day7.tests
         hspec ScrabbleScoreKata.Day8.tests
         hspec ScrabbleScoreKata.Day9.tests
