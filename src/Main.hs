@@ -100,6 +100,7 @@ module Main where
     import ScrabbleScoreKata.Day10
 
     import StringCompressor.Day1
+    import StringCompressor.Day2
 
     main = do
         hspec BowlingKata.Day1.tests
@@ -200,3 +201,4 @@ module Main where
         hspec ScrabbleScoreKata.Day10.tests
 
         hspec StringCompressor.Day1.tests
+        hspec StringCompressor.Day2.tests
