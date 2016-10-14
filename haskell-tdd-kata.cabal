@@ -16,6 +16,16 @@ library
                     ,BowlingKata.Day9
                     ,BowlingKata.Day10
                     ,BowlingKata.Day11
+                    ,CalculatorKata.Day1
+                    ,CalculatorKata.Day2
+                    ,CalculatorKata.Day3
+                    ,CalculatorKata.Day4
+                    ,CalculatorKata.Day5
+                    ,CalculatorKata.Day6
+                    ,CalculatorKata.Day7
+                    ,CalculatorKata.Day8
+                    ,CalculatorKata.Day9
+                    ,CalculatorKata.Day10
   build-depends:    base,
                     HUnit,
                     hspec
