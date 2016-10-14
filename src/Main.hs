@@ -102,6 +102,7 @@ module Main where
     import StringCompressor.Day1
     import StringCompressor.Day2
     import StringCompressor.Day3
+    import StringCompressor.Day4
 
     main = do
         hspec BowlingKata.Day1.tests
@@ -204,3 +205,4 @@ module Main where
         hspec StringCompressor.Day1.tests
         hspec StringCompressor.Day2.tests
         hspec StringCompressor.Day3.tests
+        hspec StringCompressor.Day4.tests
