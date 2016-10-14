@@ -1,6 +1,4 @@
-module FruitShopKata.Day3 (tests) where
-
-    import Test.Hspec
+module FruitShopKata.Day3 (process) where
 
     process :: [String] -> [Int]
     process products = reverse $ process' products []
@@ -15,10 +13,3 @@ module FruitShopKata.Day3 (tests) where
                 | p == "Pommes" = process' products (head bill + 100 : bill)
                 | p == "Bananes" = process' products (head bill + 150 : bill)
                 | p == "Cerises" = process' products (head bill + 75 : bill)
-
-    tests = do
-        it "should add product" $ do
-            process ["Pommes"] `shouldBe` [100]
-
-        it "should sum up cost of products" $ do
-            process ["Pommes", "Bananes", "Cerises"] `shouldBe` [100, 250, 325]

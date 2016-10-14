@@ -11,7 +11,9 @@ library
                     , CalculatorKata.Day4, CalculatorKata.Day5, CalculatorKata.Day6, CalculatorKata.Day7
                     , CalculatorKata.Day8, CalculatorKata.Day9, CalculatorKata.Day10, FizzBuzzKata.Day1
                     , FizzBuzzKata.Day2, FizzBuzzKata.Day3, FizzBuzzKata.Day4, FizzBuzzKata.Day5, FizzBuzzKata.Day6
-                    , FizzBuzzKata.Day7, FizzBuzzKata.Day8, FizzBuzzKata.Day9, FizzBuzzKata.Day10
+                    , FizzBuzzKata.Day7, FizzBuzzKata.Day8, FizzBuzzKata.Day9, FizzBuzzKata.Day10, FruitShopKata.Day1
+                    , FruitShopKata.Day2, FruitShopKata.Day3, FruitShopKata.Day4, FruitShopKata.Day5, FruitShopKata.Day6
+                    , FruitShopKata.Day7, FruitShopKata.Day8, FruitShopKata.Day9, FruitShopKata.Day10
   build-depends:    base,
                     HUnit,
                     hspec
