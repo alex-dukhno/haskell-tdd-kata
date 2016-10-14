@@ -5,27 +5,13 @@ cabal-version:      >= 1.8
 
 library
   hs-source-dirs:   src
-  exposed-modules:  BowlingKata.Day1
-                    ,BowlingKata.Day2
-                    ,BowlingKata.Day3
-                    ,BowlingKata.Day4
-                    ,BowlingKata.Day5
-                    ,BowlingKata.Day6
-                    ,BowlingKata.Day7
-                    ,BowlingKata.Day8
-                    ,BowlingKata.Day9
-                    ,BowlingKata.Day10
-                    ,BowlingKata.Day11
-                    ,CalculatorKata.Day1
-                    ,CalculatorKata.Day2
-                    ,CalculatorKata.Day3
-                    ,CalculatorKata.Day4
-                    ,CalculatorKata.Day5
-                    ,CalculatorKata.Day6
-                    ,CalculatorKata.Day7
-                    ,CalculatorKata.Day8
-                    ,CalculatorKata.Day9
-                    ,CalculatorKata.Day10
+  exposed-modules:  BowlingKata.Day1, BowlingKata.Day2, BowlingKata.Day3, BowlingKata.Day4, BowlingKata.Day5
+                    , BowlingKata.Day6, BowlingKata.Day7, BowlingKata.Day8, BowlingKata.Day9, BowlingKata.Day10
+                    , BowlingKata.Day11, CalculatorKata.Day1, CalculatorKata.Day2, CalculatorKata.Day3
+                    , CalculatorKata.Day4, CalculatorKata.Day5, CalculatorKata.Day6, CalculatorKata.Day7
+                    , CalculatorKata.Day8, CalculatorKata.Day9, CalculatorKata.Day10, FizzBuzzKata.Day1
+                    , FizzBuzzKata.Day2, FizzBuzzKata.Day3, FizzBuzzKata.Day4, FizzBuzzKata.Day5, FizzBuzzKata.Day6
+                    , FizzBuzzKata.Day7, FizzBuzzKata.Day8, FizzBuzzKata.Day9, FizzBuzzKata.Day10
   build-depends:    base,
                     HUnit,
                     hspec
