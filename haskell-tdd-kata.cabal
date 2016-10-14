@@ -1,11 +1,32 @@
 name:               haskell-tdd-kata
 version:            1.0
 Build-Type:         Simple
-cabal-version:      >= 1.2
+cabal-version:      >= 1.8
 
-executable haskell-tdd-kata
-  main-is:          Main.hs
+library
   hs-source-dirs:   src
+  exposed-modules:  BowlingKata.Day1
+                    ,BowlingKata.Day2
+                    ,BowlingKata.Day3
+                    ,BowlingKata.Day4
+                    ,BowlingKata.Day5
+                    ,BowlingKata.Day6
+                    ,BowlingKata.Day7
+                    ,BowlingKata.Day8
+                    ,BowlingKata.Day9
+                    ,BowlingKata.Day10
+                    ,BowlingKata.Day11
   build-depends:    base,
                     HUnit,
                     hspec
+
+test-suite spec
+  type: exitcode-stdio-1.0
+
+  hs-source-dirs: test
+
+  main-is: Spec.hs
+
+  build-depends:    base,
+                    hspec,
+                    haskell-tdd-kata
