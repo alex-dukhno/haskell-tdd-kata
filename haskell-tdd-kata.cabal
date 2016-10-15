@@ -22,8 +22,9 @@ library
                     , ScrabbleScoreKata.Day4, ScrabbleScoreKata.Day5, ScrabbleScoreKata.Day6, ScrabbleScoreKata.Day7
                     , ScrabbleScoreKata.Day8, ScrabbleScoreKata.Day9, ScrabbleScoreKata.Day10, SubListKata.Day1
                     , SubListKata.Day2, SubListKata.Day3, SubListKata.Day4, SubListKata.Day5, SubListKata.Day6
-                    , SubListKata.Day7
-                    , StringCompressorKata.Day1, StringCompressorKata.Day2, StringCompressorKata.Day3
+                    , SubListKata.Day7, TriangleKata.Day1, TriangleKata.Day2, TriangleKata.Day3, TriangleKata.Day4
+                    , TriangleKata.Day5, TriangleKata.Day6, TriangleKata.Day7, TriangleKata.Day8, TriangleKata.Day9
+                    , TriangleKata.Day10, StringCompressorKata.Day1, StringCompressorKata.Day2, StringCompressorKata.Day3
                     , StringCompressorKata.Day4
   build-depends:    base,
                     HUnit,
