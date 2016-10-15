@@ -18,7 +18,9 @@ library
                     , LeapYearKata.Day7, LeapYearKata.Day8, LeapYearKata.Day9, LeapYearKata.Day10, RomanNumbersKata.Day1
                     , RomanNumbersKata.Day2, RomanNumbersKata.Day3, RomanNumbersKata.Day4, RomanNumbersKata.Day5
                     , RomanNumbersKata.Day6, RomanNumbersKata.Day7, RomanNumbersKata.Day8, RomanNumbersKata.Day9
-                    , RomanNumbersKata.Day10
+                    , RomanNumbersKata.Day10, ScrabbleScoreKata.Day1, ScrabbleScoreKata.Day2, ScrabbleScoreKata.Day3
+                    , ScrabbleScoreKata.Day4, ScrabbleScoreKata.Day5, ScrabbleScoreKata.Day6, ScrabbleScoreKata.Day7
+                    , ScrabbleScoreKata.Day8, ScrabbleScoreKata.Day9, ScrabbleScoreKata.Day10
   build-depends:    base,
                     HUnit,
                     hspec
