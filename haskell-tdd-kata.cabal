@@ -21,6 +21,8 @@ library
                     , RomanNumbersKata.Day10, ScrabbleScoreKata.Day1, ScrabbleScoreKata.Day2, ScrabbleScoreKata.Day3
                     , ScrabbleScoreKata.Day4, ScrabbleScoreKata.Day5, ScrabbleScoreKata.Day6, ScrabbleScoreKata.Day7
                     , ScrabbleScoreKata.Day8, ScrabbleScoreKata.Day9, ScrabbleScoreKata.Day10
+                    , StringCompressorKata.Day1, StringCompressorKata.Day2, StringCompressorKata.Day3
+                    , StringCompressorKata.Day4
   build-depends:    base,
                     HUnit,
                     hspec
