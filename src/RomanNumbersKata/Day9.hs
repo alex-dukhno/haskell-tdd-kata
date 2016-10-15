@@ -1,12 +1,10 @@
-module RomanNumbersKata.Day9 (tests) where
+module RomanNumbersKata.Day9 (toRomanNumber) where
 
-    import Test.Hspec
-
-    toRomainNumber :: Int -> String
-    toRomainNumber num = toRomainNumber' num 50 (exceptionForBase 50)
+    toRomanNumber :: Int -> String
+    toRomanNumber num = toRomanNumber' num 50 (exceptionForBase 50)
             where
-                toRomainNumber' :: Int -> Int -> Maybe Int -> String
-                toRomainNumber' num base exception
+                toRomanNumber' :: Int -> Int -> Maybe Int -> String
+                toRomanNumber' num base exception
                     | num == 0  = ""
                     | num == 1  = "I"
                     | otherwise =
@@ -17,8 +15,8 @@ module RomanNumbersKata.Day9 (tests) where
                             Just num -> exceptionToStr exception
                             _ ->
                                 case times of
-                                    0 -> toRomainNumber' rest next (exceptionForBase next)
-                                    _ -> replicate times (baseToChar base) ++ toRomainNumber' rest next (exceptionForBase next)
+                                    0 -> toRomanNumber' rest next (exceptionForBase next)
+                                    _ -> replicate times (baseToChar base) ++ toRomanNumber' rest next (exceptionForBase next)
 
                 exceptionForBase :: Int -> Maybe Int
                 exceptionForBase base
@@ -47,28 +45,3 @@ module RomanNumbersKata.Day9 (tests) where
                     | base == 10    = 'X'
                     | base == 5     = 'V'
                     | base == 1     = 'I'
-
-    tests = do
-        it "returns an empty string when given 0"
-            (toRomainNumber 0 == "")
-
-        it "returns \"I\" when given 1"
-            (toRomainNumber 1 == "I")
-
-        {-it "returns \"V\" when given 5"
-            (toRomainNumber 5 == "V")
-
-        it "returns \"IV\" when given 4"
-            (toRomainNumber 4 == "IV")
-
-        it "returns \"X\" when given 10"
-            (toRomainNumber 10 == "X")
-
-        it "returns \"XIV\" when given 14"
-            (toRomainNumber 14 == "XIV") -}
-
-        it "returns \"L\" when given 50"
-            (toRomainNumber 50 == "L")
-
-        {-it "returns \"XLIX\" when given 49"
-            (toRomainNumber 49 == "XLIX") -}

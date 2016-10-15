@@ -15,7 +15,10 @@ library
                     , FruitShopKata.Day2, FruitShopKata.Day3, FruitShopKata.Day4, FruitShopKata.Day5, FruitShopKata.Day6
                     , FruitShopKata.Day7, FruitShopKata.Day8, FruitShopKata.Day9, FruitShopKata.Day10, LeapYearKata.Day1
                     , LeapYearKata.Day2, LeapYearKata.Day3, LeapYearKata.Day4, LeapYearKata.Day5, LeapYearKata.Day6
-                    , LeapYearKata.Day7, LeapYearKata.Day8, LeapYearKata.Day9, LeapYearKata.Day10
+                    , LeapYearKata.Day7, LeapYearKata.Day8, LeapYearKata.Day9, LeapYearKata.Day10, RomanNumbersKata.Day1
+                    , RomanNumbersKata.Day2, RomanNumbersKata.Day3, RomanNumbersKata.Day4, RomanNumbersKata.Day5
+                    , RomanNumbersKata.Day6, RomanNumbersKata.Day7, RomanNumbersKata.Day8, RomanNumbersKata.Day9
+                    , RomanNumbersKata.Day10
   build-depends:    base,
                     HUnit,
                     hspec
