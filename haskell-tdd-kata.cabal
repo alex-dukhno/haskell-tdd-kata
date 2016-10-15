@@ -20,7 +20,9 @@ library
                     , RomanNumbersKata.Day6, RomanNumbersKata.Day7, RomanNumbersKata.Day8, RomanNumbersKata.Day9
                     , RomanNumbersKata.Day10, ScrabbleScoreKata.Day1, ScrabbleScoreKata.Day2, ScrabbleScoreKata.Day3
                     , ScrabbleScoreKata.Day4, ScrabbleScoreKata.Day5, ScrabbleScoreKata.Day6, ScrabbleScoreKata.Day7
-                    , ScrabbleScoreKata.Day8, ScrabbleScoreKata.Day9, ScrabbleScoreKata.Day10
+                    , ScrabbleScoreKata.Day8, ScrabbleScoreKata.Day9, ScrabbleScoreKata.Day10, SubListKata.Day1
+                    , SubListKata.Day2, SubListKata.Day3, SubListKata.Day4, SubListKata.Day5, SubListKata.Day6
+                    , SubListKata.Day7
                     , StringCompressorKata.Day1, StringCompressorKata.Day2, StringCompressorKata.Day3
                     , StringCompressorKata.Day4
   build-depends:    base,
