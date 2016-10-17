@@ -26,6 +26,7 @@ library
                     , TriangleKata.Day5, TriangleKata.Day6, TriangleKata.Day7, TriangleKata.Day8, TriangleKata.Day9
                     , TriangleKata.Day10, StringCompressorKata.Day1, StringCompressorKata.Day2, StringCompressorKata.Day3
                     , StringCompressorKata.Day4, StringCompressorKata.Day5, StringCompressorKata.Day6
+                    , StringCompressorKata.Day7
   build-depends:    base,
                     HUnit,
                     hspec
