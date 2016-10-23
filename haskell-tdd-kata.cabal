@@ -28,6 +28,7 @@ library
                     , StringCompressorKata.Day4, StringCompressorKata.Day5, StringCompressorKata.Day6
                     , StringCompressorKata.Day7, StringCompressorKata.Day8, StringCompressorKata.Day9
                     , StringCompressorKata.Day10, UnclosedBracketsKata.Day1, UnclosedBracketsKata.Day2
+                    , UnclosedBracketsKata.Day3
   build-depends:    base,
                     HUnit,
                     hspec
