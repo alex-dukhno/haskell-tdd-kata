@@ -38,6 +38,7 @@ resolver: lts-10.4
 packages:
 - .
 - BowlingGameKata/BowlingGameDay01
+- BowlingGameKata/BowlingGameDay02
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
 # extra-deps: []
