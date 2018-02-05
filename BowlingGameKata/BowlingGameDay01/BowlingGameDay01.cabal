@@ -1,4 +1,4 @@
-name:               BowlingGameDay1
+name:               BowlingGameDay01
 version:            1.0
 Build-Type:         Simple
 cabal-version:      >= 1.8
@@ -20,4 +20,4 @@ test-suite spec
 
   build-depends:    base,
                     hspec,
-                    BowlingGameDay1
+                    BowlingGameDay01
