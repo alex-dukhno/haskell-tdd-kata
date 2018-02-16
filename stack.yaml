@@ -49,6 +49,7 @@ packages:
 - BowlingGameKata/BowlingGameDay10
 - BowlingGameKata/BowlingGameDay11
 - BowlingGameKata/BowlingGameDay12
+- BowlingGameKata/BowlingGameDay13
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
 # extra-deps: []
